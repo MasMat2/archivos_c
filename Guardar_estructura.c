@@ -44,7 +44,7 @@ void capturar(struct alumno *al, int n){
     do{
     system("clear");
     printf("Captura de datos");
-    printf("\nAlumno %d\n", n+1);
+    printf("\nAlumno %d\n", n);
     //Nombre
     getchar();
     printf("\tIngresa el nombre del alumno: ");
@@ -72,5 +72,5 @@ void capturar(struct alumno *al, int n){
     //Validacion del usuario
     printf("La informacion fue introducida correctamente? (0-No, 1-Si): ");
     scanf("%d", &op);
-    }while(op);
+    }while(!op);
 }

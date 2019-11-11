@@ -23,6 +23,7 @@ int main()
     struct alumno al;
     int e;
     fp = fopen(nm, "r");
+    printf("Calificaciones:\n");
     //Leer hasta que fread alcanze el final del archivo
     while(fread(&al, sizeof(struct alumno), 1, fp)){
         printf("\n\t%s %s %d\n%s", al.nombre, al.apellido, al.no_lista, al.materia);
@@ -30,7 +31,7 @@ int main()
         for(e=0;e<4;e++){
             printf("\t%d", al.calf[e]);
         }
-        printf("\nPromedio: %.2f", al.promedio);
+        printf("\nPromedio: %.2f\n", al.promedio);
     }
     printf("\n");
     fclose(fp);
