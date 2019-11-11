@@ -9,7 +9,7 @@ int main(){
   FILE *salida;
   int c, n=0;
   //Definir la direccion de los archivos
-  char nm[]="/Users/max/Documents/Code/c_le/archivos/Errores/salida.txt";
+  char nm[]="/salida.txt";
 
   //Abrir el archivo salida en modo de lectura
   salida = fopen(nm, "r");

@@ -4,7 +4,7 @@
 int main(){
   FILE *fuente;
   //Definir la direccion de los archivos
-  char nm[]="/Users/max/Documents/Code/c_le/archivos/Errores/fuente.txt";
+  char nm[]="/fuente.txt";
 
   //Abrir el archivo fuente en modo de escritura
   fuente = fopen(nm, "r");
