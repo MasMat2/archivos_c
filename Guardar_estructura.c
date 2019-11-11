@@ -67,7 +67,7 @@ void capturar(struct alumno *al, int n){
     for(i=0;i<4;i++){
         printf("\tCalificacion %d: ", i+1);
         scanf("%d", &al->calf[i]);
-        al->promedio = (float)al->calf[i]/4;
+        al->promedio += (float)al->calf[i]/4;
     }
     //Validacion del usuario
     printf("La informacion fue introducida correctamente? (0-No, 1-Si): ");
